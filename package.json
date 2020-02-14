@@ -1,0 +1,27 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "description": "A CMS in NODE.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryowuandjanet/cms.git"
+  },
+  "keywords": [
+    "cms"
+  ],
+  "author": "ryowu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryowuandjanet/cms/issues"
+  },
+  "homepage": "https://github.com/ryowuandjanet/cms#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "nodemon": "^2.0.2"
+  }
+}

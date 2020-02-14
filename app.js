@@ -1,0 +1,20 @@
+const express = require('express');
+const app = express();
+const path = require('path');
+const exphbs = require('express-handlebars');
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.engine('handlebars',exphbs({defalutLayout:'home'}));
+app.set('view engine','handlebars');
+
+const home = require('./routes/home/index');
+const admin = require('./routes/admin/index');
+
+app.use('/',home);
+app.use('/admin',admin);
+
+
+app.listen(3000, ()=>{
+	console.log('Listening on port 3000');
+});
